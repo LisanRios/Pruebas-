@@ -1,17 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import { Task } from "../../task";
-import { TASKS } from '../../mock_tasks';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { Task } from '../../task';
+import { TaskService } from "../../service/task.service";
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
   styleUrls: ['./tasks.component.css']
 })
 export class TasksComponent implements OnInit {
-  tasks: Task[] = TASKS;
-  faTimes = faTimes;
-  ngOnInit(): void {
+  tasks: Task[] = [];
 
+  constructor(
+    private taskService: TaskService
+  ){}
+
+  ngOnInit(): void {
+    this.taskService.getTasks().subscribe((tasks) => (
+      this.tasks = tasks
+    ));
   }
 
 }
