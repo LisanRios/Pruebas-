@@ -158,19 +158,96 @@ int main(){
 /*22
     Construye un programa que permita ingresar 2 tiempos, expresados en horas, minutos y segundos, el mismo debe emitir por pantalla la suma
     de ambos(también en horas, minutos y segundos).
-*/      
+
         float horario1,horario2,horayMinutos1,segundos1,horayMinutos2,segundos2,respuesta;
         printf("Introdusca el primer horario: hora.minutos)\n");
-        scanf("%f",&horayMinutos1);     
+        scanf("%f",&horayMinutos1);
         printf("Introdusca del primer horario los segundos)\n");
         scanf("%f",&segundos1);
         horario1 = horayMinutos1 +segundos1;
         printf("Introdusca el segundo horario: hora.minutos)\n");
-        scanf("%f",&horayMinutos2);     
+        scanf("%f",&horayMinutos2);
         printf("Introdusca del segundo horario los segundos)\n");
         scanf("%f",&segundos2);
         horario1 = horayMinutos2 + segundos2;
         respuesta = horario1+horario2;
         printf("La respuesta es : %f\n",ceil(respuesta));
+        */
+
+/*23
+    Desarrolla un algoritmo que le permita leer un valor radio (R), calcular el área (A) de un círculo y emitir valor.
+
+        float radio, area;
+        printf("Introdusca el radio\n");
+        scanf("%f", &radio);
+        area=3.14*((radio)*(radio));
+        printf("El area es :%.2f\n", area);
+        */
+
+/*24
+    Determina la hipotenusa de un triángulo rectángulo conocidas las longitudes de sus dos catetos. Desarrolla los correspondientes algoritmos.
+
+        float cateto1, cateto2, hipo;
+        printf("Introdusca el cateto 1\n");
+        scanf("%f", &cateto1);
+        printf("Introdusca el cateto 2\n");
+        scanf("%f", &cateto2);
+        hipo=sqrt(((cateto1)*(cateto1))+((cateto2)*(cateto2)));
+        printf("La hipotenusa es :%.2f\n", hipo);
+        */
+
+/*25
+    Ingresa una cantidad entera de segundos y conviértela en horas, minutos y segundo utilizando los operadores de cociente y resto enteros.
+
+        float segundos, minutos, horas;
+        printf("Introdusca los segundos \n");
+        scanf("%f", &segundos);
+        horas= segundos / 3600;
+        minutos= segundos / 60;
+        printf("Los segundos trasformados a horas son: %.1f\n", ceil(horas));
+        printf("Los segundos trasformados a minutos son: %.1f\n", ceil(minutos));
+        */
+
+/*26
+    Desarrolla un algoritmo que permita leer un valor que represente una temperatura expresada en grados Celcius y convierta dicho valor en un valor expresado en grados Fahrenheit.
+
+        float cel, fa,num;
+        printf("Introdusca los grados celcius \n");
+        scanf("%f", &cel);
+        fa = (cel * 1.8)+(32);
+        printf("Los grados celcius trasformados a Fahrenheit son: %.2f\n", fa);
+        */
+
+/*27
+    Desarrolla un algoritmo que permita calcular el área de un triángulo en función de las longitudes de sus lados (A, B, C) previamente leídos desde el teclado.
+
+        float A, B, C, s, area;
+        printf("Introdusca el lado A \n");
+        scanf("%f", &A);
+        printf("Introdusca el lado B \n");
+        scanf("%f", &B);
+        printf("Introdusca el lado C \n");
+        scanf("%f", &C);
+        s = (A+B+C)/2;
+        area = sqrt(s*((s-A)*(s-B)*(s-C)));
+        printf("El area de u: %.2f\n", area);
+        */
+
+/*28
+    Desarrolla un algoritmo que permita determinar el área y volumen de un cilindro cuyo radio (r) y altura (h) se leen desde teclado.
+
+        float A, B, C, s, area;
+        printf("Introdusca el lado A \n");
+        scanf("%f", &A);
+        printf("Introdusca el lado B \n");
+        scanf("%f", &B);
+        printf("Introdusca el lado C \n");
+        scanf("%f", &C);
+        s = (A+B+C)/2;
+        area = sqrt(s*((s-A)*(s-B)*(s-C)));
+        printf("El area de u: %.2f\n", area);
+
+*/
+
     return 0;
 }
