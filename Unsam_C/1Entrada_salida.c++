@@ -158,7 +158,7 @@ int main(){
 /*22
     Construye un programa que permita ingresar 2 tiempos, expresados en horas, minutos y segundos, el mismo debe emitir por pantalla la suma
     de ambos(también en horas, minutos y segundos).
-*/      
+    
         float horario1,horario2,horayMinutos1,segundos1,horayMinutos2,segundos2,respuesta;
         printf("Introdusca el primer horario: hora.minutos)\n");
         scanf("%f",&horayMinutos1);     
@@ -173,4 +173,8 @@ int main(){
         respuesta = horario1+horario2;
         printf("La respuesta es : %f\n",ceil(respuesta));
     return 0;
+    
+    esta todo hecho!!!!!
+    
+    */  
 }
