@@ -38,19 +38,22 @@ int main(){
         char texto[200];
         int indice_cadena = 0;
         printf("Escriba un texto: \n");
-        gets(texto[200]);
+        gets(texto);
      //   void funcion(); 
-        if (texto[indice_cadena]>=97 && texto[indice_cadena]<=122)
-            {   
-                texto[indice_cadena]= indice_cadena - 32;
-                printf("Respuesta: %c\n", texto[200]);
-            } else
-            {
-                printf("Respuesta: %c\n", texto[200]);
-            }
-            
-        
-        
+        while (texto[indice_cadena] != '\0')
+        {
+            if (texto[indice_cadena]>=97 && texto[indice_cadena]<=122)
+                {   
+                    texto[indice_cadena]= indice_cadena - 32;
+                    printf("Respuesta: %c\n", texto[200]);
+                    indice_cadena++;
+                } else
+                {
+                    printf("Respuesta: %c\n", texto[200]);
+                    indice_cadena++;
+
+                }
+        }    
     return 0;
 
 
