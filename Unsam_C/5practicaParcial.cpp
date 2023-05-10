@@ -73,7 +73,7 @@ int main() {
 #include <stdlib.h>
 #include <time.h>
 int main() {
-    int numero_generado, numero_usuario, ganador=0;
+    int numero_generado, numero_usuario, flag=0;
     srand(time(NULL));
     numero_generado = rand() % 100 + 1;
 
@@ -86,7 +86,7 @@ int main() {
         {
         case 'numero_generado':
             printf("Ganaste!!!! \n");
-            ganador = 1;
+            flag = 1;
         break;
 
         default :
@@ -106,7 +106,7 @@ int main() {
         break;
         }
     } 
-    if (ganador != 1)
+    if (flag != 1)
     {
         printf("Perdiste el numero era: %d\n", numero_generado);
     } else
